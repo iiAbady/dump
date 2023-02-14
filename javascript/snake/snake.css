@@ -1,0 +1,15 @@
+body {
+	background: grey;
+}
+
+canvas {
+	display: block;
+	border: 10px solid rgb(100, 116, 77);
+	margin: auto;
+}
+
+#score {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
