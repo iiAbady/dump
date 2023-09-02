@@ -1,0 +1,107 @@
+/*Basic stuff*/
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input {
+	background: none;
+	border: none;
+	color: white;
+	font-family: Courier, monospace;
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+html {
+	cursor: url('./cursor.svg'), pointer;
+}
+
+
+body {
+	font-family: Courier, monospace;
+	background-color: #C08261;
+	color: white;
+	text-align: center;
+	text-shadow: 5px 5px 5px #956247;
+}
+
+
+header {
+	margin-bottom: 3rem;
+}
+
+header > * {
+	margin: 1rem 0;
+}
+
+.logo svg {
+	animation: 4s rotate 3s infinite;
+}
+
+.container {
+	padding: 8rem 0;
+	text-align: center;
+}
+
+.search {
+	margin: 0 auto;
+	border: 1px solid #704b37;
+	max-width: 22rem;
+	height: 2rem;
+	background: #956247;
+	position: relative;
+	margin-bottom: 4rem;
+	
+	.icon {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 padding-left: 1rem;
+	 display: flex;
+	 align-items: center;
+	}
+	
+	& input {
+		width: 100%;
+		height: 100%;
+		padding-left: 3rem;
+	}
+}
+
+.projects {
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+	
+	
+	.project {
+		max-width: 30rem;
+		padding: 2.5rem;
+		background: #956247;
+		border: 1px solid #704b37;
+		border-radius: 5px;
+		position: relative;
+		
+		.tag {
+		background: #b97800;
+		position: absolute;
+		top: 6px;
+		left: 6px;
+	}
+	}
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

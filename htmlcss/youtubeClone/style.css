@@ -1,0 +1,157 @@
+/* basic stuff */
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+:root {
+	--dark-primary-background-color: #0f0f0f;
+	--dark-secondary-background-color: #222222;
+	--dark-teritary-background-color: #121212;
+	--secondary-text-color: #aaa;
+}
+	
+body {
+	background-color: var(--dark-primary-background-color);
+	font-family: Roboto, Arial, sans-serif;
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"aside main"
+	"aside footer";
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+body > header {
+	grid-area: header;
+	align-self: start;
+}
+
+body > aside {
+	grid-area: aside;
+	overflow-y: scroll;
+}
+
+body > aside::-webkit-scrollbar {
+	width: 10px;
+}
+
+body > aside::-webkit-scrollbar-track {
+	background-color: var(--dark-secondary-background-color)
+}
+
+body > aside::-webkit-scrollbar-thumb {
+	width: 5px;
+	background-color: red;
+}
+
+body > main {
+	grid-area: main;
+}
+
+body > footer {
+	grid-area: footer;
+}
+
+input, button {
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+input:focus-visible {
+	outline: none;
+}
+
+.container {
+ padding: 0 1.5rem;
+}
+
+.top-content {
+	display: flex;
+	margin-top: 0.2rem;
+	min-height: 3rem;
+	gap: 0.8rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top-content-start {
+	display: flex;
+	min-height: 3rem;
+	gap: 0.8rem;
+	align-items: center;
+}
+
+
+.top-content-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.search-input {
+	
+}
+
+.search-container {
+	align-self: stretch;
+	width: 536px;
+	background-color: var(--dark-teritary-background-color);
+	border: 1px solid hsla(0, 0%, 53.3%, 0.2);
+	display: flex;
+	align-items: center;
+	border-radius: 40px 0 0 40px;
+	padding: 0px 4px 0px 16px;
+}
+
+.search-icon-container {
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	padding: 0 25px;
+	background-color: var(--dark-secondary-background-color);
+	border-radius: 0 40px 40px 0;
+}
+
+.top-content-end {
+	display: flex;
+	align-items: center;
+}
+
+.circle-image {
+	border-radius: 50%;
+}
+
+.icon-background:hover {
+	background-color: var(--dark-secondary-background-color);
+	border-radius: 50%;
+}
+
+.video {
+	
+}
+
+.video-image {
+	
+}
+
+aside li button {
+	width: 100%;
+	text-align: start;
+	padding: 10px;
+	padding-left: 0;
+}
+
+aside li span {
+	font-size: 0.95rem;
+}
+
+.channels img, span {
+	vertical-align: middle;
+}
