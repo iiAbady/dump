@@ -112,7 +112,7 @@ function filterProjects(query) {
 	for (const langProject in parsedProjects) {
 		const langFilteredProjects = [];
 		for (const project of parsedProjects[langProject]) {
-			if (project.name.toLowerCase().includes(query))
+			if (project.name.toLowerCase().includes(query.toLowerCase()))
 				langFilteredProjects.push(project);
 		}
 		filteredProjects[langProject] = langFilteredProjects;
