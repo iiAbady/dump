@@ -1,30 +1,37 @@
-<!doctype>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>CheetaType</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Cheeta typing." />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+	<meta charset="UTF-8" />
+	<title>CheetaType</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Cheeta typing." />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
-<main>
+	<header>
+		<h1 class="title"><span>🐆</span> Leopard Typing</h1>
+	</header>
+	<main>
+		<div style="display: flex; justify-content: space-between;">
+			<p class="stat"><span class="stat-val" id="roundWPM">N/A</span> WPM</p>
+			<p class="stat"><span class="stat-val" id="avgWPM">N/A</span> AVG WPM</p>
+			<p class="stat"><span class="stat-val" id="diff">Easy</span> Corpus Difficulty</p>
+		</div>
+		<p class="text"></p>
+		<div class="input-container"><input id="inputText" type="text" name="word" /></div>
+		<button type="button" id="new" hidden class="stat-val" style="text-align: center; border: 1px solid goldenrod; background-color: transparent;">New <span class="stat">or (Ctrl + Enter)</span></button>
+	</main>
 
-<div style="display: flex; flex-flow: column wrap; row-gap: 1rem; justify-content: space-between; ">
-<h1 class="title"><span>🐆</span> Leopard Typing</h1>
-<button class="option typerace">Typeracer</button>
-<button class="option monketype">Monkeytype</button>
-</div>
+	<footer>
 
-
-<div><p class="text">Some Some Some Some Some Some Some Some Some Some Some wfjlqw wflrw eglkrwegkwe rgkwer gkwe gkwe rkwe rgkjwer wkjr gjwekr gjkwe rgkjwe rkjg rkjwe grjkwe rgkjw rw kj wjkr wkje gkjwr gjkr wekjr gwekjr gwekwergwe</p>
-<div class="input-container"><input type="text" name="word"/></div>
-</div>
-</main>
-
-<footer>
-
-</footer>
-<script src="./script.js">
+	</footer>
+	<script src="./script.js"></script>
 </body>
+
 </html>
